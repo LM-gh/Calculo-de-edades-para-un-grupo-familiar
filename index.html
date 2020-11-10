@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Calculo de edades para un grupo familiar</title>
+  </head>
+  <body>
+    <form id="calculador-edades" onsubmit="false">
+      <label for="cantidad-integrantes"
+        >Ingrese la cantidad de integrantes:</label
+      >
+      <input id="cantidad-integrantes" type="number" />
+      <button type="submit" id="siguiente-paso">Siguiente</button>
+
+      <div id="placeholder-integrantes">
+        <button type="button" id="calcular" class="oculto">Calcular</button>
+      </div>
+
+      <div id="resultado-calculos" class="oculto">
+        <p>La mayor edad es: <strong id="mayor-edad"></strong></p>
+        <p>La menor edad es: <strong id="menor-edad"></strong></p>
+        <p>El promedio de edad es:<strong id="promedio-edad"></strong></p>
+      </div>
+      <button type="reset" id="resetear">Resetear</button>
+      <div id="errores" class="oculto">
+        <p id="error-integrantes-invalido"></p>
+        <p id="error-input-invalido"></p>
+      </div>
+    </form>
+    <script src="js/calculos_grupo_familiar.js"></script>
+    <script src="js/pruebas.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
